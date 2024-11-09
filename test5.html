@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+ <head>
+ 	<title>Вітаміни та мінерали</title>
+ 	<link rel="stylesheet" type="text/css" href="main.css">
+
+
+<SCRIPT LANGUAGE="JavaScript">
+
+<!-- Begin
+var ans = new Array;
+var done = new Array;
+var yourAns = new Array;
+var explainAnswer = new Array;
+
+var score = 0;
+ans[1] = "d";
+ans[2] = "a";
+ans[3] = "c";
+ans[4] = "b";
+ans[5] = "c";
+
+explainAnswer[1]="";
+explainAnswer[2]="";
+explainAnswer[3]="";
+explainAnswer[4]="";
+explainAnswer[5]="";
+
+function Engine(question, answer) {
+yourAns[question]=answer;
+}
+
+function Score(){
+var answerText = "Ваша оцінка\n------------------------------------\n";
+for(i=1;i<=5;i++){
+   answerText=answerText+"\nВідповідь:"+i+"\n";
+  if(ans[i]!=yourAns[i]){
+    answerText=answerText+"\nНеправильно, правильна відповідь: "+ans[i]+"\n"+explainAnswer[i]+"\n";
+  }
+  else{
+    answerText=answerText+" \nПравильно! \n";
+    score++;
+  }
+}
+
+answerText=answerText+"\n\nВаша оцінка: "+score+"\n";
+
+//now score the user
+answerText=answerText+"\nРезультат: ";
+if(score<=0){
+answerText=answerText+"Спробуйте ще";
+}
+if(score>=1 && score <=2){
+answerText=answerText+"Так собі";
+}
+if(score>=3 && score <=3){
+answerText=answerText+"Добре";
+}
+if(score>4){
+answerText=answerText+"Чудово";
+}
+
+alert(answerText);
+
+}
+
+</script>
+
+
+ </head>
+ <body>
+ <h1>Перевір себе</h1>
+
+<hr>
+<FORM>
+
+<b>1. Які з даних вітамінів є жиророзчинними?</b><br>
+<input type=radio name="q1" value="a" onClick="Engine(1, this.value)">a) B<sub>1</sub>, B<sub>5</sub>, B<sub>9</sub>, B<sub>12</sub><br>
+<input type=radio name="q1" value="b" onClick="Engine(1, this.value)">b) C, B<sub>3</sub>, E, D<br>
+<input type=radio name="q1" value="c" onClick="Engine(1, this.value)">c) A, B<sub>2</sub>, C, D<br>
+<input type=radio name="q1" value="d" onClick="Engine(1, this.value)">d) A, D, E, K<p>
+
+<b>2. Який з вітамінів бере участь в окисно-відновних процесах, підвищує стійкість до інфекцій?</b><br>
+<input type=radio name="q2" value="a" onClick="Engine(2, this.value)">a) С<br>
+<input type=radio name="q2" value="b" onClick="Engine(2, this.value)">b) A<br>
+<input type=radio name="q2" value="c" onClick="Engine(2, this.value)">c) K<br>
+<input type=radio name="q2" value="d" onClick="Engine(2, this.value)">d) B<sub>6</sub><p>
+
+<b>3. Який з даних продуктів містить токоферол?</b><br>
+<input type=radio name="q3" value="a" onClick="Engine(3, this.value)">a) кухонна сіль<br>
+<input type=radio name="q3" value="b" onClick="Engine(3, this.value)">b) плоди шипшини<br>
+<input type=radio name="q3" value="c" onClick="Engine(3, this.value)">c) рослинні олії<br>
+<input type=radio name="q3" value="d" onClick="Engine(3, this.value)">d) яловичина<p>
+
+<b>4. Яку функцію виконує Калій?</b><br>
+<input type=radio name="q4" value="a" onClick="Engine(4, this.value)">a) є компонентом шлункового соку<br>
+<input type=radio name="q4" value="b" onClick="Engine(4, this.value)">b) забезпечує функціонування клітинних мембран, зумовлює проведення нервових імпульсів<br>
+<input type=radio name="q4" value="c" onClick="Engine(4, this.value)">с) входить до складу транспортного білка гемоглобіну, який забезпечує транспортування кисню, входить до складу багатьох ферментів<br>
+<input type=radio name="q4" value="d" onClick="Engine(4, this.value)">d) підтримує в клітинах організму необхідний водно-сольовий баланс, нормалізує функції нирок і нервово-м'язову діяльність, обумовлює нормальний ритм серця, впливає на синтез гормонів, регуляцію кров'яного тиску.<p>
+
+<b>5. Які продукти містять Хлор?</b><br>
+<input type=radio name="q5" value="a" onClick="Engine(5, this.value)">a) горіхи, насіння, бобові, крупи, овочі<br>
+<input type=radio name="q5" value="b" onClick="Engine(5, this.value)">b) яйця, м'ясо, молочні продукти, злаки<br>
+<input type=radio name="q5" value="c" onClick="Engine(5, this.value)">c) кухонна сіль<br>
+<input type=radio name="q5" value="d" onClick="Engine(5, this.value)">d) дріжджі, печінка, яйця, молоко, морка, капуста.<p>
+<CENTER>
+<input type=button onClick="Score()" value="Перевірити результат">
+
+</CENTER>
+</FORM>
+
+<p><hr></p>
+
+<a href="vitamikr.html" align="center"><h3>Повернутись на попередню сторінку</h3></a>
+
+ </body>
+</html>

@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+ <head>
+ 	<title>Клітковина</title>
+ 	<link rel="stylesheet" type="text/css" href="main.css">
+
+
+<SCRIPT LANGUAGE="JavaScript">
+
+<!-- Begin
+var ans = new Array;
+var done = new Array;
+var yourAns = new Array;
+var explainAnswer = new Array;
+
+var score = 0;
+ans[1] = "c";
+ans[2] = "b";
+ans[3] = "d";
+ans[4] = "a";
+ans[5] = "b";
+
+explainAnswer[1]="";
+explainAnswer[2]="";
+explainAnswer[3]="";
+explainAnswer[4]="";
+explainAnswer[5]="";
+
+function Engine(question, answer) {
+yourAns[question]=answer;
+}
+
+function Score(){
+var answerText = "Ваша оцінка\n------------------------------------\n";
+for(i=1;i<=5;i++){
+   answerText=answerText+"\nВідповідь:"+i+"\n";
+  if(ans[i]!=yourAns[i]){
+    answerText=answerText+"\nНеправильно, правильна відповідь: "+ans[i]+"\n"+explainAnswer[i]+"\n";
+  }
+  else{
+    answerText=answerText+" \nПравильно! \n";
+    score++;
+  }
+}
+
+answerText=answerText+"\n\nВаша оцінка: "+score+"\n";
+
+//now score the user
+answerText=answerText+"\nРезультат: ";
+if(score<=0){
+answerText=answerText+"Спробуйте ще";
+}
+if(score>=1 && score <=2){
+answerText=answerText+"Так собі";
+}
+if(score>=3 && score <=3){
+answerText=answerText+"Добре";
+}
+if(score>4){
+answerText=answerText+"Чудово";
+}
+
+alert(answerText);
+
+}
+
+</script>
+
+
+ </head>
+ <body>
+ <h1>Перевір себе</h1>
+
+<hr>
+<FORM>
+
+<b>1. Що таке харчові волокна?</b><br>
+<input type=radio name="q1" value="a" onClick="Engine(1, this.value)">a) рослинні клітини, клітини грибів<br>
+<input type=radio name="q1" value="b" onClick="Engine(1, this.value)">b) залишки тваринних клітин<br>
+<input type=radio name="q1" value="c" onClick="Engine(1, this.value)">c) залишки рослинних клітин, їстівних частини рослин і грибів<br>
+<input type=radio name="q1" value="d" onClick="Engine(1, this.value)">d) залишки глюкози та вітамінів<p>
+
+<b>2. Що НЕ є функцією клітковини?</b><br>
+<input type=radio name="q2" value="a" onClick="Engine(2, this.value)">a) стимуляція детоксикації організму<br>
+<input type=radio name="q2" value="b" onClick="Engine(2, this.value)">b) розчеплення харчових волокон до глюкози<br>
+<input type=radio name="q2" value="c" onClick="Engine(2, this.value)">c) стимуляція перистальтики кишечника<br>
+<input type=radio name="q2" value="d" onClick="Engine(2, this.value)">d) забезпечення активного травлення<p>
+
+<b>3. Які продукти містять клітковину?</b><br>
+<input type=radio name="q3" value="a" onClick="Engine(3, this.value)">a) кисломолочний сир, молоко, твердий сир<br>
+<input type=radio name="q3" value="b" onClick="Engine(3, this.value)">b) риба, рослинні олії, свинина<br>
+<input type=radio name="q3" value="c" onClick="Engine(3, this.value)">c) курячі яйця, креветки, мідії<br>
+<input type=radio name="q3" value="d" onClick="Engine(3, this.value)">d) злакові культури, фрукти, овочі<p>
+
+<b>4. Чим є харчові волокна з хімічної точки зору?</b><br>
+<input type=radio name="q4" value="a" onClick="Engine(4, this.value)">a) вуглеводи<br>
+<input type=radio name="q4" value="b" onClick="Engine(4, this.value)">b) білки<br>
+<input type=radio name="q4" value="c" onClick="Engine(4, this.value)">с) жири<br>
+<input type=radio name="q4" value="d" onClick="Engine(4, this.value)">d) амінокислоти<p>
+
+<b>5. Що роблять симбіотичні бактерії, що живуть в кишківнику людини?</b><br>
+<input type=radio name="q5" value="a" onClick="Engine(5, this.value)">a) синтезують вітаміни D i C<br>
+<input type=radio name="q5" value="b" onClick="Engine(5, this.value)">b) розчеплюють харчові волокна до глюкози, синтезують вітаміни В і К<br>
+<input type=radio name="q5" value="c" onClick="Engine(5, this.value)">c) синтезують глюкозу, вітаміни В і К<br>
+<input type=radio name="q5" value="d" onClick="Engine(5, this.value)">d) розчеплюють харчові волокна до жирних кислот і спиртів<p>
+<CENTER>
+<input type=button onClick="Score()" value="Перевірити результат">
+
+</CENTER>
+</FORM>
+
+<p><hr></p>
+
+<a href="klitkovyna.html" align="center"><h3>Повернутись на попередню сторінку</h3></a>
+
+ </body>
+</html>

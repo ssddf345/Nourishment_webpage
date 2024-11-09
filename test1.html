@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+ <head>
+ 	<title>Білки</title>
+ 	<link rel="stylesheet" type="text/css" href="main.css">
+
+
+<SCRIPT LANGUAGE="JavaScript">
+
+<!-- Begin
+var ans = new Array;
+var done = new Array;
+var yourAns = new Array;
+var explainAnswer = new Array;
+
+var score = 0;
+ans[1] = "b";
+ans[2] = "b";
+ans[3] = "a";
+ans[4] = "a";
+ans[5] = "b";
+
+explainAnswer[1]="";
+explainAnswer[2]="";
+explainAnswer[3]="";
+explainAnswer[4]="";
+explainAnswer[5]="";
+
+function Engine(question, answer) {
+yourAns[question]=answer;
+}
+
+function Score(){
+var answerText = "Ваша оцінка\n------------------------------------\n";
+for(i=1;i<=5;i++){
+   answerText=answerText+"\nВідповідь:"+i+"\n";
+  if(ans[i]!=yourAns[i]){
+    answerText=answerText+"\nНеправильно, правильна відповідь: "+ans[i]+"\n"+explainAnswer[i]+"\n";
+  }
+  else{
+    answerText=answerText+" \nПравильно! \n";
+    score++;
+  }
+}
+
+answerText=answerText+"\n\nВаша оцінка: "+score+"\n";
+
+//now score the user
+answerText=answerText+"\nРезультат: ";
+if(score<=0){
+answerText=answerText+"Спробуйте ще";
+}
+if(score>=1 && score <=2){
+answerText=answerText+"Так собі";
+}
+if(score>=3 && score <=3){
+answerText=answerText+"Добре";
+}
+if(score>4){
+answerText=answerText+"Чудово";
+}
+
+alert(answerText);
+
+}
+
+</script>
+
+
+ </head>
+ <body>
+ <h1>Перевір себе</h1>
+
+<hr>
+<FORM>
+
+<b>1. Яку частину раціону повинні складати білки?</b><br>
+<input type=radio name="q1" value="a" onClick="Engine(1, this.value)">a) 50-60%<br>
+<input type=radio name="q1" value="b" onClick="Engine(1, this.value)">b) 20-25%<br>
+<input type=radio name="q1" value="c" onClick="Engine(1, this.value)">c) 9-17%<br>
+<input type=radio name="q1" value="d" onClick="Engine(1, this.value)">d) 30-45%<p>
+
+<b>2. Що є мономерами білків?</b><br>
+<input type=radio name="q2" value="a" onClick="Engine(2, this.value)">a) полімери<br>
+<input type=radio name="q2" value="b" onClick="Engine(2, this.value)">b) амінокислоти<br>
+<input type=radio name="q2" value="c" onClick="Engine(2, this.value)">c) ферменти<br>
+<input type=radio name="q2" value="d" onClick="Engine(2, this.value)">d) аміногрупи<p>
+
+<b>3. Що НЕ є функцією білків?</b><br>
+<input type=radio name="q3" value="a" onClick="Engine(3, this.value)">a) запасання енергії<br>
+<input type=radio name="q3" value="b" onClick="Engine(3, this.value)">b) реплікація ДНК<br>
+<input type=radio name="q3" value="c" onClick="Engine(3, this.value)">c) транспорт молекул<br>
+<input type=radio name="q3" value="d" onClick="Engine(3, this.value)">d) каталізація метаболічних реакцій<p>
+
+<b>4. Що обумовлює обов'язкове вживання білків у їжу?</b><br>
+<input type=radio name="q4" value="a" onClick="Engine(4, this.value)">a) потреба в незамінних амінокислотах<br>
+<input type=radio name="q4" value="b" onClick="Engine(4, this.value)">b) потреба в незамінних білках<br>
+<input type=radio name="q4" value="c" onClick="Engine(4, this.value)">с) потреба в аміногрупах<br>
+<input type=radio name="q4" value="d" onClick="Engine(4, this.value)">d) потреба в карбоксильних групах<p>
+
+<b>5. Який з перелічених продуктів НЕ містить білки?</b><br>
+<input type=radio name="q5" value="a" onClick="Engine(5, this.value)">a) йогурт<br>
+<input type=radio name="q5" value="b" onClick="Engine(5, this.value)">b) картопля <br>
+<input type=radio name="q5" value="c" onClick="Engine(5, this.value)">c) квасоля<br>
+<input type=radio name="q5" value="d" onClick="Engine(5, this.value)">d) лосось<p>
+<CENTER>
+<input type=button onClick="Score()" value="Перевірити результат">
+
+</CENTER>
+</FORM>
+
+<p><hr></p>
+
+<a href="bilky.html" align="center"><h3>Повернутись на попередню сторінку</h3></a>
+
+ </body>
+</html>

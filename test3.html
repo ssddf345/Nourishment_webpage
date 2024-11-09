@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+ <head>
+ 	<title>Вуглеводи</title>
+ 	<link rel="stylesheet" type="text/css" href="main.css">
+
+
+<SCRIPT LANGUAGE="JavaScript">
+
+<!-- Begin
+var ans = new Array;
+var done = new Array;
+var yourAns = new Array;
+var explainAnswer = new Array;
+
+var score = 0;
+ans[1] = "b";
+ans[2] = "c";
+ans[3] = "a";
+ans[4] = "c";
+ans[5] = "d";
+
+explainAnswer[1]="";
+explainAnswer[2]="";
+explainAnswer[3]="";
+explainAnswer[4]="";
+explainAnswer[5]="";
+
+function Engine(question, answer) {
+yourAns[question]=answer;
+}
+
+function Score(){
+var answerText = "Ваша оцінка\n------------------------------------\n";
+for(i=1;i<=5;i++){
+   answerText=answerText+"\nВідповідь:"+i+"\n";
+  if(ans[i]!=yourAns[i]){
+    answerText=answerText+"\nНеправильно, правильна відповідь: "+ans[i]+"\n"+explainAnswer[i]+"\n";
+  }
+  else{
+    answerText=answerText+" \nПравильно! \n";
+    score++;
+  }
+}
+
+answerText=answerText+"\n\nВаша оцінка: "+score+"\n";
+
+//now score the user
+answerText=answerText+"\nРезультат: ";
+if(score<=0){
+answerText=answerText+"Спробуйте ще";
+}
+if(score>=1 && score <=2){
+answerText=answerText+"Так собі";
+}
+if(score>=3 && score <=3){
+answerText=answerText+"Добре";
+}
+if(score>4){
+answerText=answerText+"Чудово";
+}
+
+alert(answerText);
+
+}
+
+</script>
+
+
+ </head>
+ <body>
+ <h1>Перевір себе</h1>
+
+<hr>
+<FORM>
+
+<b>1. Яку частину раціону повинні складати вуглеводи?</b><br>
+<input type=radio name="q1" value="a" onClick="Engine(1, this.value)">a) 20-40%<br>
+<input type=radio name="q1" value="b" onClick="Engine(1, this.value)">b) 30-50%<br>
+<input type=radio name="q1" value="c" onClick="Engine(1, this.value)">c) 10-30%<br>
+<input type=radio name="q1" value="d" onClick="Engine(1, this.value)">d) 40-60%<p>
+
+<b>2. Що є мономерами складних вуглеводів?</b><br>
+<input type=radio name="q2" value="a" onClick="Engine(2, this.value)">a) амінокислоти<br>
+<input type=radio name="q2" value="b" onClick="Engine(2, this.value)">b) жирні кислоти<br>
+<input type=radio name="q2" value="c" onClick="Engine(2, this.value)">c) цукри<br>
+<input type=radio name="q2" value="d" onClick="Engine(2, this.value)">d) полісахариди<p>
+
+<b>3. Яка функція вуглеводів в організмі людини?</b><br>
+<input type=radio name="q3" value="a" onClick="Engine(3, this.value)">a) енергетична<br>
+<input type=radio name="q3" value="b" onClick="Engine(3, this.value)">b) захисна<br>
+<input type=radio name="q3" value="c" onClick="Engine(3, this.value)">c) гормонотворна<br>
+<input type=radio name="q3" value="d" onClick="Engine(3, this.value)">d) терморегуляторна<p>
+
+<b>4. Який з даних хімічних елементів НЕ є складовою вуглеводів?</b><br>
+<input type=radio name="q4" value="a" onClick="Engine(4, this.value)">a) Н - Гідроген<br>
+<input type=radio name="q4" value="b" onClick="Engine(4, this.value)">b) О - Оксиген<br>
+<input type=radio name="q4" value="c" onClick="Engine(4, this.value)">с) N - Нітроген<br>
+<input type=radio name="q4" value="d" onClick="Engine(4, this.value)">d) С - Карбон<p>
+
+<b>5. Який з перелічених продуктів НЕ містить вуглеводи?</b><br>
+<input type=radio name="q5" value="a" onClick="Engine(5, this.value)">a) кавун<br>
+<input type=radio name="q5" value="b" onClick="Engine(5, this.value)">b) ячмінна крупа<br>
+<input type=radio name="q5" value="c" onClick="Engine(5, this.value)">c) квасоля<br>
+<input type=radio name="q5" value="d" onClick="Engine(5, this.value)">d) яловичина<p>
+<CENTER>
+<input type=button onClick="Score()" value="Перевірити результат">
+
+</CENTER>
+</FORM>
+
+<p><hr></p>
+
+<a href="vuhlevody.html" align="center"><h3>Повернутись на попередню сторінку</h3></a>
+
+ </body>
+</html>

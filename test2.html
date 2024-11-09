@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+ <head>
+ 	<title>Жири</title>
+ 	<link rel="stylesheet" type="text/css" href="main.css">
+
+
+<SCRIPT LANGUAGE="JavaScript">
+
+<!-- Begin
+var ans = new Array;
+var done = new Array;
+var yourAns = new Array;
+var explainAnswer = new Array;
+
+var score = 0;
+ans[1] = "a";
+ans[2] = "d";
+ans[3] = "c";
+ans[4] = "d";
+ans[5] = "b";
+
+explainAnswer[1]="";
+explainAnswer[2]="";
+explainAnswer[3]="";
+explainAnswer[4]="";
+explainAnswer[5]="";
+
+function Engine(question, answer) {
+yourAns[question]=answer;
+}
+
+function Score(){
+var answerText = "Ваша оцінка\n------------------------------------\n";
+for(i=1;i<=5;i++){
+   answerText=answerText+"\nВідповідь:"+i+"\n";
+  if(ans[i]!=yourAns[i]){
+    answerText=answerText+"\nНеправильно, правильна відповідь: "+ans[i]+"\n"+explainAnswer[i]+"\n";
+  }
+  else{
+    answerText=answerText+" \nПравильно! \n";
+    score++;
+  }
+}
+
+answerText=answerText+"\n\nВаша оцінка: "+score+"\n";
+
+//now score the user
+answerText=answerText+"\nРезультат: ";
+if(score<=0){
+answerText=answerText+"Спробуйте ще";
+}
+if(score>=1 && score <=2){
+answerText=answerText+"Так собі";
+}
+if(score>=3 && score <=3){
+answerText=answerText+"Добре";
+}
+if(score>4){
+answerText=answerText+"Чудово";
+}
+
+alert(answerText);
+
+}
+
+</script>
+
+
+ </head>
+ <body>
+ <h1>Перевір себе</h1>
+
+<hr>
+<FORM>
+
+<b>1. Оберіть що НЕ є властивістю ліпідів</b><br>
+<input type=radio name="q1" value="a" onClick="Engine(1, this.value)">a) розчинність у полярних розчинниках<br>
+<input type=radio name="q1" value="b" onClick="Engine(1, this.value)">b) розчинність у неполяних розчинниках<br>
+<input type=radio name="q1" value="c" onClick="Engine(1, this.value)">c) гідрофобність<br>
+<input type=radio name="q1" value="d" onClick="Engine(1, this.value)">d) неполярність молекул<p>
+
+<b>2. Який з перелічених продуктів містить насичені жири?</b><br>
+<input type=radio name="q2" value="a" onClick="Engine(2, this.value)">a) рослинні олії<br>
+<input type=radio name="q2" value="b" onClick="Engine(2, this.value)">b) риба<br>
+<input type=radio name="q2" value="c" onClick="Engine(2, this.value)">c) горіхи<br>
+<input type=radio name="q2" value="d" onClick="Engine(2, this.value)">d) яловичина<p>
+
+<b>3. Який з перелічених продуктів містить ненасичені жири?</b><br>
+<input type=radio name="q3" value="a" onClick="Engine(3, this.value)">a) яловичина<br>
+<input type=radio name="q3" value="b" onClick="Engine(3, this.value)">b) свинина<br>
+<input type=radio name="q3" value="c" onClick="Engine(3, this.value)">c) рослинні олії<br>
+<input type=radio name="q3" value="d" onClick="Engine(3, this.value)">d) сир<p>
+
+<b>4. Що НЕ є фунцією жирів?</b><br>
+<input type=radio name="q4" value="a" onClick="Engine(4, this.value)">a) запасаюча<br>
+<input type=radio name="q4" value="b" onClick="Engine(4, this.value)">b) енергетична<br>
+<input type=radio name="q4" value="c" onClick="Engine(4, this.value)">с) захисна<br>
+<input type=radio name="q4" value="d" onClick="Engine(4, this.value)">d) реплікація ДНК<p>
+
+<b>5. Яку частину раціону повинні складати жири?</b><br>
+<input type=radio name="q5" value="a" onClick="Engine(5, this.value)">a) 7-18%<br>
+<input type=radio name="q5" value="b" onClick="Engine(5, this.value)">b) 20-40%<br>
+<input type=radio name="q5" value="c" onClick="Engine(5, this.value)">c) 50-65%<br>
+<input type=radio name="q5" value="d" onClick="Engine(5, this.value)">d) 60-65%<p>
+<CENTER>
+<input type=button onClick="Score()" value="Перевірити результат">
+
+</CENTER>
+</FORM>
+
+<p><hr></p>
+
+<a href="zhyry.html" align="center"><h3>Повернутись на попередню сторінку</h3></a>
+
+ </body>
+</html>
